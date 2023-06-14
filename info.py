@@ -11,14 +11,14 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'TgMovieSearchRequestBot')
-API_ID = int(environ.get('API_ID', '19491592'))
-API_HASH = environ.get('API_HASH', '01a4118f7aec3b2caece77a057fdd197')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+SESSION = environ.get('SESSION', 'Mdisk_TeluguMovies_Bot')
+API_ID = int(environ.get('API_ID', '13115322'))
+API_HASH = environ.get('API_HASH', 'f28fbd1367ddda2e6f863c3129323743')
+BOT_TOKEN = environ.get('BOT_TOKEN', "5981961026:AAF3aFhIqHL8Ic8c-2QXuVI34K8oyEIZEhg")
 
-UPDATES_CHANNEL = environ.get("UPDATES_CHANNEL", "USE_FULL_BOTZ")
+UPDATES_CHANNEL = environ.get("UPDATES_CHANNEL", "nenmemeravtha_1")
 HOW_TO_DOWNLOAD = environ.get("HOW_TO_DOWNLOAD", "How_To_Download_1")
-REQUEST_MOVIES = environ.get("REQUEST_MOVIES", "RequestMoviez1999")
+REQUEST_MOVIES = environ.get("REQUEST_MOVIES", "https://t.me/+xftGUfKVLbkzNzZl")
 
 #Port
 PORT = environ.get("PORT", "8080")
@@ -30,33 +30,33 @@ PICS = (environ.get('PICS', 'https://te.legra.ph/file/3a8d252ba431d035a2224.jpg'
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001589316857 -1001869924693 -1001446583785 -1001647655116 -1001976969484 -1001633667104 -1001697865519').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001840167833').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001758096945')
-auth_grp = environ.get('AUTH_GROUP', '-1001804839194')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001731898377')
+auth_grp = environ.get('AUTH_GROUP', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Jagan:753753753@cluster0.zisdn.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Telegram")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegramnew')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001875704370'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'USE_FULL_BOTZ_SUPPORT')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001712123362'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+xftGUfKVLbkzNzZl')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{file_caption}\n\n<b>⍟──❰ 💝 [𝚄𝚂𝙴 𝙵𝚄𝙻𝙻 𝙱𝙾𝚃𝚉](https://telegram.me/use_full_botz) 💝 ❱──⍟\n\n𝚃𝚑𝚒𝚜 𝙵𝚒𝚕𝚎 𝚆𝚒𝚕𝚕 𝙱𝚎 𝙳𝚎𝚕𝚎𝚝𝚎𝚍 𝚆𝚒𝚝𝚑𝚒𝚗 5 𝙼𝚒𝚗𝚞𝚝𝚎𝚜, 𝚂𝚘 𝙵𝚘𝚛𝚠𝚊𝚛𝚍 𝙸𝚝 𝚃𝚘 𝚈𝚘𝚞𝚛 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜, 𝚃𝚑𝚎𝚗 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙸𝚝 𝙵𝚛𝚘𝚖 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜.\n\n⍟──❰ 💝 [𝚄𝚂𝙴 𝙵𝚄𝙻𝙻 𝙱𝙾𝚃𝚉](https://telegram.me/use_full_botz) 💝 ❱──⍟</b>")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "{file_caption}\n\n<b>⍟──❰ 💝 [𝚄𝚂𝙴 𝙵𝚄𝙻𝙻 𝙱𝙾𝚃𝚉](https://telegram.me/use_full_botz) 💝 ❱──⍟\n\n𝚃𝚑𝚒𝚜 𝙵𝚒𝚕𝚎 𝚆𝚒𝚕𝚕 𝙱𝚎 𝙳𝚎𝚕𝚎𝚝𝚎𝚍 𝚆𝚒𝚝𝚑𝚒𝚗 5 𝙼𝚒𝚗𝚞𝚝𝚎𝚜, 𝚂𝚘 𝙵𝚘𝚛𝚠𝚊𝚛𝚍 𝙸𝚝 𝚃𝚘 𝚈𝚘𝚞𝚛 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜, 𝚃𝚑𝚎𝚗 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙸𝚝 𝙵𝚛𝚘𝚖 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜.\n\n⍟──❰ 💝 [𝚄𝚂𝙴 𝙵𝚄𝙻𝙻 𝙱𝙾𝚃𝚉](https://telegram.me/use_full_botz) 💝 ❱──⍟</b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{file_caption}\n\n<b>⍟──❰ 💝 [TELUGU BABAI](https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟\n\n𝚃𝚑𝚒𝚜 𝙵𝚒𝚕𝚎 𝚆𝚒𝚕𝚕 𝙱𝚎 𝙳𝚎𝚕𝚎𝚝𝚎𝚍 𝚆𝚒𝚝𝚑𝚒𝚗 5 𝙼𝚒𝚗𝚞𝚝𝚎𝚜, 𝚂𝚘 𝙵𝚘𝚛𝚠𝚊𝚛𝚍 𝙸𝚝 𝚃𝚘 𝚈𝚘𝚞𝚛 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜, 𝚃𝚑𝚎𝚗 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙸𝚝 𝙵𝚛𝚘𝚖 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜.\n\n⍟──❰ 💝 [TELUGU BABAI](https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟</b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "{file_caption}\n\n<b>⍟──❰ 💝 [TELUGU BABAI](https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟\n\n𝚃𝚑𝚒𝚜 𝙵𝚒𝚕𝚎 𝚆𝚒𝚕𝚕 𝙱𝚎 𝙳𝚎𝚕𝚎𝚝𝚎𝚍 𝚆𝚒𝚝𝚑𝚒𝚗 5 𝙼𝚒𝚗𝚞𝚝𝚎𝚜, 𝚂𝚘 𝙵𝚘𝚛𝚠𝚊𝚛𝚍 𝙸𝚝 𝚃𝚘 𝚈𝚘𝚞𝚛 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜, 𝚃𝚑𝚎𝚗 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙸𝚝 𝙵𝚛𝚘𝚖 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜.\n\n⍟──❰ 💝 [TELUGU BABAI(https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟</b>")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🧿 ᴛɪᴛᴛʟᴇ :  {title} \n🌟 ʀᴀᴛɪɴɢ : {rating} \n🎭 ɢᴇɴʀᴇ : {genres} \n📆 ʀᴇʟᴇᴀsᴇ : {year} \n⏰ ᴅᴜʀᴀᴛɪᴏɴ : {runtime} \n🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages} \n🔖 sʜᴏʀᴛ : {plot} \n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : @USE_FULL_BOTZ")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001589316857 -1001869924693 -1001446583785 -1001647655116 -1001976969484 -1001633667104 -1001697865519')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001840167833')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
@@ -75,8 +75,8 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
     
       # URL Shortener #
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'OmegaLinks.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '291045271e395bb939a30ef297067201ab32fb10')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'gyanilinks.com')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '195ba82b34f0e8b8bf2c572470bb82e8bd53baaf')
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 600))
@@ -86,8 +86,7 @@ if SELF_DELETE == "True":
 
     # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://telegram.me/How_To_Download_1/"
-
+DOWNLOAD_TEXT_URL = "https://t.me/Telugu_Babai/9"
    # Custom Caption Under Button #
 CAPTION_BUTTON = "❤️‍🔥 Join & Support ❤️‍🔥"
 CAPTION_BUTTON_URL = f"https://telegram.me/{UPDATES_CHANNEL}"
