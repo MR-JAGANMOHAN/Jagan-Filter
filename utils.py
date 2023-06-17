@@ -406,7 +406,7 @@ async def shorten_url(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    url = f'https://gyanilinks.com/st'
+    url = f'https://gyanilinks.com/api'
     params = {'api': URL_SHORTNER_WEBSITE_API,
               'url': link,
               }
