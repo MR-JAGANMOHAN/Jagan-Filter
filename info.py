@@ -17,8 +17,8 @@ API_HASH = environ.get('API_HASH', 'f28fbd1367ddda2e6f863c3129323743')
 BOT_TOKEN = environ.get('BOT_TOKEN', "5981961026:AAF3aFhIqHL8Ic8c-2QXuVI34K8oyEIZEhg")
 
 UPDATES_CHANNEL = environ.get("UPDATES_CHANNEL", "nenmemeravtha_1")
-HOW_TO_DOWNLOAD = environ.get("HOW_TO_DOWNLOAD", "How_To_Download_1")
-REQUEST_MOVIES = environ.get("REQUEST_MOVIES", "https://t.me/+xftGUfKVLbkzNzZl")
+HOW_TO_DOWNLOAD = environ.get("HOW_TO_DOWNLOAD", "Telugu_Babai/9")
+REQUEST_MOVIES = environ.get("REQUEST_MOVIES", "+xftGUfKVLbkzNzZl")
 
 #Port
 PORT = environ.get("PORT", "8080")
@@ -41,7 +41,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Jagan:753753753@cluster0.zisdn.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Telegram")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegramnew')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Tgfiles')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001712123362'))
