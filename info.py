@@ -11,10 +11,10 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Mdisk_TeluguMovies_Bot')
+SESSION = environ.get('SESSION', 'FilesSearch_Robot')
 API_ID = int(environ.get('API_ID', '13115322'))
 API_HASH = environ.get('API_HASH', 'f28fbd1367ddda2e6f863c3129323743')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5981961026:AAF3aFhIqHL8Ic8c-2QXuVI34K8oyEIZEhg")
+BOT_TOKEN = environ.get('BOT_TOKEN', "5851799181:AAGwFmRAM702Fq6F4YIr-ayVRZtOa3Axr7M")
 
 UPDATES_CHANNEL = environ.get("UPDATES_CHANNEL", "nenmemeravtha_1")
 HOW_TO_DOWNLOAD = environ.get("HOW_TO_DOWNLOAD", "Telugu_Babai/9")
@@ -39,7 +39,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Jagan:753753753@cluster0.zisdn.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jagan1857:1857@cluster0.4sgxbb4.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Telegram")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Tgfiles')
 
@@ -49,8 +49,8 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+xftGUfKVLbkzNzZl')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{file_caption}\n\n<b>⍟──❰ 💝 [TELUGU BABAI](https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟\n\n𝚃𝚑𝚒𝚜 𝙵𝚒𝚕𝚎 𝚆𝚒𝚕𝚕 𝙱𝚎 𝙳𝚎𝚕𝚎𝚝𝚎𝚍 𝚆𝚒𝚝𝚑𝚒𝚗 5 𝙼𝚒𝚗𝚞𝚝𝚎𝚜, 𝚂𝚘 𝙵𝚘𝚛𝚠𝚊𝚛𝚍 𝙸𝚝 𝚃𝚘 𝚈𝚘𝚞𝚛 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜, 𝚃𝚑𝚎𝚗 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙸𝚝 𝙵𝚛𝚘𝚖 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜.\n\n⍟──❰ 💝 [TELUGU BABAI](https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟</b>")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "{file_caption}\n\n<b>⍟──❰ 💝 [TELUGU BABAI](https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟\n\n𝚃𝚑𝚒𝚜 𝙵𝚒𝚕𝚎 𝚆𝚒𝚕𝚕 𝙱𝚎 𝙳𝚎𝚕𝚎𝚝𝚎𝚍 𝚆𝚒𝚝𝚑𝚒𝚗 5 𝙼𝚒𝚗𝚞𝚝𝚎𝚜, 𝚂𝚘 𝙵𝚘𝚛𝚠𝚊𝚛𝚍 𝙸𝚝 𝚃𝚘 𝚈𝚘𝚞𝚛 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜, 𝚃𝚑𝚎𝚗 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙸𝚝 𝙵𝚛𝚘𝚖 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜.\n\n⍟──❰ 💝 [TELUGU BABAI(https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟</b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{file_caption}\n\n<b>⍟──❰ 💝 [TELUGU BABAI](https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟\n\n𝚃𝚑𝚒𝚜 𝙵𝚒𝚕𝚎 𝚆𝚒𝚕𝚕 𝙱𝚎 𝙳𝚎𝚕𝚎𝚝𝚎𝚍 𝚆𝚒𝚝𝚑𝚒𝚗 5 𝙼𝚒𝚗𝚞𝚝𝚎𝚜, 𝚂𝚘 𝙵𝚘𝚛𝚠𝚊𝚛𝚍 𝙸𝚝 𝚃𝚘 𝚈𝚘𝚞𝚛 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜, 𝚃𝚑𝚎𝚗 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍.\n\n⍟──❰ 💝 [TELUGU BABAI](https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟</b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "{file_caption}\n\n<b>⍟──❰ 💝 [TELUGU BABAI](https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟\n\n𝚃𝚑𝚒𝚜 𝙵𝚒𝚕𝚎 𝚆𝚒𝚕𝚕 𝙱𝚎 𝙳𝚎𝚕𝚎𝚝𝚎𝚍 𝚆𝚒𝚝𝚑𝚒𝚗 5 𝙼𝚒𝚗𝚞𝚝𝚎𝚜, 𝚂𝚘 𝙵𝚘𝚛𝚠𝚊𝚛𝚍 𝙸𝚝 𝚃𝚘 𝚈𝚘𝚞𝚛 𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜, 𝚃𝚑𝚎𝚗 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍.\n\n⍟──❰ 💝 [TELUGU BABAI(https://telegram.me/TELUGU_BABAI) 💝 ❱──⍟</b>")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🧿 ᴛɪᴛᴛʟᴇ :  {title} \n🌟 ʀᴀᴛɪɴɢ : {rating} \n🎭 ɢᴇɴʀᴇ : {genres} \n📆 ʀᴇʟᴇᴀsᴇ : {year} \n⏰ ᴅᴜʀᴀᴛɪᴏɴ : {runtime} \n🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages} \n🔖 sʜᴏʀᴛ : {plot} \n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : @TELUGU_BABAI")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
@@ -79,7 +79,7 @@ URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'gyanilinks.com')
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '195ba82b34f0e8b8bf2c572470bb82e8bd53baaf')
 
      # Auto Delete For Group Message (Self Delete) #
-SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 600))
+SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 700))
 SELF_DELETE = environ.get('SELF_DELETE', True)
 if SELF_DELETE == "True":
     SELF_DELETE = True
