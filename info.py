@@ -29,7 +29,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://te.legra.ph/file/3a8d252ba431d035a2224.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1459910748 5166634607').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1459910748 5166634607 1795550232 2140794396 1926899055 5336126803').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001840167833 -1001979162231 -1001968612719 -1001940538271').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1459910748').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -45,7 +45,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Tgfiles')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001712123362'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+xftGUfKVLbkzNzZl')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+sQwpOdS_cbQzZDE9')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
@@ -74,7 +74,8 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 ## EXTRA FEATURES ##
     
       # URL Shortener #
-
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'gyanilinks.com')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '195ba82b34f0e8b8bf2c572470bb82e8bd53baaf')
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 700))
