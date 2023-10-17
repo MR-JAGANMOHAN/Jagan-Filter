@@ -29,7 +29,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://te.legra.ph/file/3a8d252ba431d035a2224.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1459910748  5166634607 1795550232 2140794396 1926899055 5336126803 5003515051 1185680029 5010804779 1661667426 5905376520 6118961369').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1459910748  5166634607 1795550232 2140794396 1926899055 5336126803 5003515051 1185680029 5010804779 1661667426 5905376520 6118961369 1411032890').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001840167833 -1001979162231 -1001968612719 -1001940538271').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1459910748').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
