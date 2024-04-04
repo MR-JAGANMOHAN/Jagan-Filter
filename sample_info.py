@@ -1,3 +1,6 @@
+import re
+from os import environ
+
 # Bot information
 SESSION = 'Media_search'
 USER_SESSION = 'User_Bot'
