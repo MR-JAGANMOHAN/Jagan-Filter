@@ -133,18 +133,18 @@ async def get_search_results(query, file_type=None, max_results=10, offset=0, fi
 
 # verifies max_results is an even number or not
     if max_results % 2 != 0:  # if max_results is an odd number, add 1 to make it an even number
-    logger.info(f"Since max_results is an odd number ({max_results}), bot will use {max_results+1} as max_results to make it even.")
-    max_results += 1
+        logger.info(f"Since max_results is an odd number ({max_results}), bot will use {max_results+1} as max_results to make it even.")
+        max_results += 1
 
-    cursor = Media.find(filter)
-    cursor2 = Media2.find(filter)
+        cursor = Media.find(filter)
+        cursor2 = Media2.find(filter)
     # Sort by recent
-    cursor.sort('$natural', -1)
-    cursor2.sort('$natural', -1)
+        cursor.sort('$natural', -1)
+        cursor2.sort('$natural', -1)
     # Slice files according to offset and max results
-    cursor.skip(offset).limit(max_results)
+        cursor.skip(offset).limit(max_results)
     # Get list of files
-    fileList2 = await cursor2.to_list(length=max_results)
+        fileList2 = await cursor2.to_list(length=max_results)
     if len(fileList2)<max_results:
         next_offset = offset+len(fileList2)
         cursorSkipper = (next_offset-(await Media2.count_documents(filter)))
