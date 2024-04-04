@@ -129,10 +129,10 @@ async def get_search_results(query, file_type=None, max_results=10, offset=0, fi
     if file_type:
         filter['file_type'] = file_type
 
-total_results = ((await Media.count_documents(filter))+(await Media2.count_documents(filter)))
+        total_results = ((await Media.count_documents(filter))+(await Media2.count_documents(filter)))
 
 # verifies max_results is an even number or not
-if max_results % 2 != 0:  # if max_results is an odd number, add 1 to make it an even number
+    if max_results % 2 != 0:  # if max_results is an odd number, add 1 to make it an even number
     logger.info(f"Since max_results is an odd number ({max_results}), bot will use {max_results+1} as max_results to make it even.")
     max_results += 1
 
