@@ -74,7 +74,7 @@ async def save_file(media):
          if await Media.count_documents({'file_id': file_id}, limit=1):
             logger.warning(f'{getattr(media, "file_name", "NO_FILE")} is already saved in primary DB !')
             return False, 0
-        file = saveMedia(
+            file = saveMedia(
             file_id=file_id,
             file_ref=file_ref,
             file_name=file_name,
@@ -82,7 +82,7 @@ async def save_file(media):
             file_type=media.file_type,
             mime_type=media.mime_type,
             caption=media.caption.html if media.caption else None,
-        )
+                            )
     except ValidationError:
         logger.exception('Error occurred while saving file in database')
         return False, 2
