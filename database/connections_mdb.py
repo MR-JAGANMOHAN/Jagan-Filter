@@ -55,14 +55,14 @@ async def add_connection(group_id, user_id):
                     }
                 )
                 return True
-            else:
-                mycol.update_one(
-                    {'_id': user_id},
-                    {
-                        "$push": {"group_details": group_details},
-                        "$set": {"active_group" : group_id}
-                    }
-                )
+       else:
+            mycol.update_one(
+                {'_id': user_id},
+                {
+                    "$push": {"group_details": group_details},
+                    "$set": {"active_group" : group_id}
+                }
+                            )
                 return True
         except:
             logger.exception('Some error occurred!', exc_info=True)
