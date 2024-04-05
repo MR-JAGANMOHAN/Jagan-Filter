@@ -62,8 +62,8 @@ async def add_connection(group_id, user_id):
                     "$push": {"group_details": group_details},
                     "$set": {"active_group" : group_id}
                 }
-                            )
-                return True
+            )
+            return True
         except:
             logger.exception('Some error occurred!', exc_info=True)
 
