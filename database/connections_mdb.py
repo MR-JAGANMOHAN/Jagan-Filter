@@ -64,8 +64,8 @@ async def add_connection(group_id, user_id):
                 }
             )
             return True
-        except:
-            logger.exception('Some error occurred!', exc_info=True)
+    except:
+        logger.exception('Some error occurred!', exc_info=True)
 
         
 async def active_connection(user_id):
