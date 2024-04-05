@@ -26,11 +26,6 @@ class Database:
                 ban_reason="",
             ),
         )
-            user = await self.col.find_one({'id':int(id)})
-        if not user:
-            await self.col2.update_one({'id': int(id)}, {'$set': {'verification_status': status}})
-        else:
-            await self.col.update_one({'id': int(id)}, {'$set': {'verification_status': status}})
 
 
     def new_group(self, id, title):
